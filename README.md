@@ -1,21 +1,24 @@
-<!-- README.md for Manish Singh | Full-Stack Developer -->
+<!-- README.md for Manish Singh | Frontend Software Engineer -->
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&pause=1000&color=00ADB5&center=true&vCenter=true&width=700&lines=Hey+there,+I'm+Manish+Singh!;Full-Stack+Developer+%7C+React+%7C+Next.js+%7C+Node.js;Building+clean+and+scalable+web+products;Let%E2%80%99s+build+the+future+of+tech+🚀" alt="Typing Intro" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&pause=1000&color=00ADB5&center=true&vCenter=true&width=700&lines=Hey+there,+I'm+Manish+Singh!;Frontend+Software+Engineer+%7C+React+%7C+Next.js+%7C+TypeScript;Building+scalable,+high-performance+web+applications;2025+B.Tech+Graduate+🚀" alt="Typing Intro" />
 </p>
 
 <p align="center">
   <a href="https://manishsingh.me" target="_blank">
     <img src="https://img.shields.io/badge/Portfolio-22223B?style=flat-square&logo=google-chrome&logoColor=white" />
   </a>
-  <a href="mailto:manishsingh13275@gmail.com">
+  <a href="mailto:smanish14322@gmail.com">
     <img src="https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white" />
   </a>
   <a href="https://www.linkedin.com/in/singh-manish1/" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white" />
   </a>
-  <a href="https://github.com/MAnishSingh13275" target="_blank">
+  <a href="https://github.com/singh-manish1" target="_blank">
     <img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" />
+  </a>
+  <a href="tel:+916268530480">
+    <img src="https://img.shields.io/badge/Phone-25D366?style=flat-square&logo=whatsapp&logoColor=white" />
   </a>
 </p>
 
@@ -26,14 +29,15 @@
     <td align="left" valign="middle">
       <h2>👋 Hi, I’m <strong>Manish Singh</strong></h2>
       <ul>
-        <li>🛠️ <b>Full-Stack Developer</b> & Builder.</li>
-        <li>🚀 Passionate about scalable SaaS, clean UI, and developer productivity.</li>
-        <li>📦 <b>Key Projects:</b> <a href="https://repset-mu.vercel.app" target="_blank"><b>Repset</b></a> (modern gym management SaaS), <a href="https://gurukool.tech" target="_blank"><b>Gurukool</b></a> (AI-powered learning platform).</li>
-        <li>🌱 Exploring automation, API design, and UI/UX excellence.</li>
+        <li>🎓 <b>Frontend Software Engineer</b> & 2025 B.Tech Graduate from UIT RGPV, Bhopal.</li>
+        <li>🚀 Passionate about building scalable, high-performance web applications with React, Next.js, and TypeScript.</li>
+        <li>📦 <b>Key Projects:</b> <a href="https://onezy.in" target="_blank"><b>Onezy Live</b></a> (portfolio/agency website), <a href="https://repset.in" target="_blank"><b>Repset</b></a> (gym management SaaS), <a href="https://rachnakaar.vercel.app" target="_blank"><b>Rachnakaar</b></a> (multilingual writing platform).</li>
+        <li>🌱 Expert in translating Figma designs into modular components while maintaining WCAG standards and optimizing Core Web Vitals.</li>
+        <li>📍 Based in Bhopal, Madhya Pradesh</li>
       </ul>
     </td>
     <td align="center" width="185">
-      <img src="https://avatars.githubusercontent.com/MAnishSingh13275?size=180" width="160" alt="Manish Singh avatar" style="border-radius:50%;box-shadow:0 0 16px #00ADB5;"/>
+      <img src="https://avatars.githubusercontent.com/singh-manish1?size=180" width="160" alt="Manish Singh avatar" style="border-radius:50%;box-shadow:0 0 16px #00ADB5;"/>
     </td>
   </tr>
 </table>
@@ -41,62 +45,126 @@
 ---
 
 <details open>
-<summary><b>🚀 About Me</b></summary>
+<summary><b>🚀 Professional Profile</b></summary>
 <br>
 <ul>
   <li>
-    <b>Full-Stack Engineer:</b> Focused on building robust, maintainable, and delightful web experiences.
+    <b>Frontend Software Engineer:</b> Detail-oriented engineer with proven expertise in building scalable, high-performance web applications using React, Next.js, and TypeScript.
   </li>
   <li>
-    <b>Skills:</b> React.js · Next.js · Node.js · TypeScript · Prisma · PostgreSQL · Tailwind · Docker · AWS
+    <b>Core Skills:</b> JavaScript (ES6+) · TypeScript · React.js · Next.js · HTML5 · CSS3 · SASS · Tailwind CSS · Material UI · Framer Motion
   </li>
   <li>
-    <b>Project Highlights:</b> 
+    <b>State & Data Management:</b> Redux Toolkit · Zustand · Context API · React Query · tRPC Client · Zod
+  </li>
+  <li>
+    <b>Professional Experience:</b>
     <ul>
-      <li><b>Repset</b> – Next-gen gym SaaS (multi-tenant, onboarding, clean UI)</li>
-      <li><b>Gurukool</b> – AI-powered study and notes platform for students</li>
+      <li><b>Braktt Technologies Pvt. Ltd.</b> – Software Development Engineer Intern (May 2023 - Jan 2024)</li>
+      <li><b>Frontend Developer Intern</b> (Oct 2022 - Apr 2023)</li>
     </ul>
   </li>
   <li>
-    <b>Other Projects:</b> Real-time chat apps, open-source UI, and performance tools.
+    <b>Key Achievements:</b> 25% reduction in LCP through optimization, 20-point increase in Lighthouse accessibility scores, 30% faster interaction times with React Query implementation.
+  </li>
+  <li>
+    <b>Leadership:</b> Instructor at CodeCult, Web Master at Asper Club, mentoring 100+ students in modern React and frontend best practices.
   </li>
 </ul>
 </details>
 
 ---
 
-<h3 align="center">🛠️ Tech Stack</h3>
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=react,nextjs,nodejs,typescript,javascript,prisma,postgres,express,tailwind,docker,aws,git,github" /><br>
-  <img src="https://skillicons.dev/icons?i=html,css,vite,figma" />
-</p>
+<h3 align="center">🛠️ Technical Skills</h3>
+
+<div align="center">
+
+**Frontend Stack**
+<br>
+<img src="https://skillicons.dev/icons?i=javascript,typescript,react,nextjs,html,css,sass" />
+
+**Styling & UI**
+<br>
+<img src="https://skillicons.dev/icons?i=tailwind,materialui,figma" />
+
+**State & Data Management**
+<br>
+<img src="https://skillicons.dev/icons?i=redux" />
+<br>
+React Query · Zustand · Context API · tRPC Client · Zod
+
+**Tools & Backend**
+<br>
+<img src="https://skillicons.dev/icons?i=git,nodejs,postgres,prisma,vercel" />
+
+**Testing & Quality**
+<br>
+Lighthouse Audits · Chrome DevTools · Cross-browser Testing · WCAG Compliance
+
+</div>
 
 ---
 
-<h3 align="center">📊 GitHub Stats</h3>
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=MAnishSingh13275&theme=radical&hide_border=true" height="140"/>
-</p>
-
 ---
 
-<h3 align="center">🚩 Projects</h3>
+<h3 align="center">🚩 Featured Projects</h3>
 
-<p align="center">
-  <a href="https://repset-mu.vercel.app" target="_blank">
-    <img src="./assets/Repset.png" alt="Repset Screenshot" width="70%" style="border-radius: 12px; box-shadow: 0 4px 18px rgba(0,0,0,0.08);" />
-  </a>
-  <br>
-  <b><a href="https://repset-mu.vercel.app" target="_blank">Repset</a></b> – All-in-one gym management platform
-</p>
+<div align="center">
 
-<p align="center">
-  <a href="https://gurukool.tech" target="_blank">
-    <img src="./assets/Gurukool.png" alt="Gurukool Screenshot" width="70%" style="border-radius: 12px; box-shadow: 0 4px 18px rgba(0,0,0,0.08);" />
-  </a>
-  <br>
-  <b><a href="https://gurukool.tech" target="_blank">Gurukool</a></b> – AI-powered learning platform
-</p>
+### �  Onezy Live – Portfolio & Agency Website
+<a href="https://onezy.in" target="_blank">
+  <img src="./assets/Onezy.png" alt="Onezy Live Screenshot" width="70%" style="border-radius: 12px; box-shadow: 0 4px 18px rgba(0,0,0,0.08);" />
+</a>
+
+**Tech Stack:** Next.js 15 · React 19 · TypeScript · Tailwind CSS
+
+A Modern, Full-Stack Portfolio & Agency Website built with cutting-edge web technologies. Features stunning UI, robust admin panel, and seamless user experience for showcasing services and projects.
+
+[🔗 Live Demo](https://onezy.in/) <!-- | [📖 Case Study](https://manishsingh.me/projects/onezy) -->
+
+<br>
+
+### 🏋️ Repset – Gym Management SaaS
+<a href="https://repset.in" target="_blank">
+  <img src="./assets/Repset.png" alt="Repset Screenshot" width="70%" style="border-radius: 12px; box-shadow: 0 4px 18px rgba(0,0,0,0.08);" />
+</a>
+
+**Tech Stack:** Next.js · Prisma · Clerk · TypeScript
+
+A modern SaaS platform designed for gyms and fitness studios. Handles membership management, attendance, analytics, and online payments with multi-tenant architecture.
+
+[🔗 Live Demo](https://repset.in/) <!-- | [📖 Case Study](https://manishsingh.me/projects/repset) -->
+
+<br>
+
+### ✍️ Rachnakaar – Multilingual Writing Platform
+**Tech Stack:** Next.js · TypeScript · Prisma · Clerk
+
+A modern platform for Indian writers to share stories, poems, and creativity in their native languages. Features rich text editing, writing competitions, and social features with full support for Indian language scripts.
+
+[🔗 Live Demo](https://rachnakaar.vercel.app/) | [💻 Code](https://github.com/MAnishSingh13275/rachnakaar.git) <!-- | [📖 Case Study](https://manishsingh.me/projects/rachnakaar) -->
+
+<br>
+
+### 🤖 Gurukool – AI-Powered Learning Platform
+**Tech Stack:** Next.js · Langchain · OpenAI · tRPC
+
+AI-powered learning platform for students, offering curated study materials, previous year question papers, and contextual PDF-based answering with intelligent content generation.
+
+[🔗 Live Demo](https://gurukool.tech) | [💻 Code](https://github.com/MAnishSingh13275/Gurukool) <!-- | [📖 Case Study](https://manishsingh.me/projects/gurukool) -->
+
+<br>
+
+### 💬 Talk – Real-Time Chat Application
+**Tech Stack:** React.js · Socket.io · MongoDB
+
+Real-time messaging web app with robust authentication, message history, and modern UI. Built for seamless chat experiences with instant message delivery and user presence indicators.
+
+[💻 Code](https://github.com/MAnishSingh13275/talk) <!-- | [📖 Case Study](https://manishsingh.me/projects/talk) -->
+
+
+
+</div>
 
 ---
 
@@ -109,21 +177,24 @@
 
 ---
 
-<h3 align="center">📌 What I'm Up To</h3>
+<h3 align="center">📌 Current Focus</h3>
 <ul>
-  <li>🚀 Building, scaling, and shipping modern SaaS products.</li>
-  <li>⚡ Improving UI performance, accessibility, and user experience.</li>
-  <li>💡 Exploring new frontend patterns, TypeScript, and cloud deployment.</li>
-  <li>📚 Leveling up in DevOps (Docker + AWS + K8s) and system design.</li>
+  <li>🎓 Recently graduated with B.Tech in Computer Science from UIT RGPV (2025)</li>
+  <li>🚀 Building scalable web applications with React, Next.js, and TypeScript</li>
+  <li>⚡ Optimizing Core Web Vitals and maintaining WCAG accessibility standards</li>
+  <li>💡 Translating complex Figma designs into modular, reusable component libraries</li>
+  <li>📚 Mentoring students in modern React and frontend best practices</li>
+  <li>🔍 Seeking opportunities as a Frontend Software Engineer</li>
 </ul>
 
 ---
 
 <p align="center">
-  <a href="https://drive.google.com/file/d/1XRoJSCAaDV_Zj6Ho9wHd42vz-XFv4jQ6/view?usp=sharing" target="_blank"><b>📄 Resume (PDF)</b></a> •
   <a href="https://manishsingh.me" target="_blank"><b>🌐 Portfolio</b></a> •
-  <a href="mailto:manishsingh13275@gmail.com"><b>✉️ Email</b></a> •
-  <a href="https://www.linkedin.com/in/singh-manish1/" target="_blank"><b>🔗 LinkedIn</b></a>
+  <a href="mailto:smanish14322@gmail.com"><b>✉️ Email</b></a> •
+  <a href="https://www.linkedin.com/in/singh-manish1/" target="_blank"><b>🔗 LinkedIn</b></a> •
+  <a href="https://github.com/singh-manish1" target="_blank"><b>🔗 GitHub</b></a> •
+  <a href="tel:+916268530480"><b>📞 +91 6268530480</b></a>
 </p>
 
 ---
@@ -132,9 +203,9 @@
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/MAnishSingh13275/MAnishSingh13275/blob/output/github-contribution-grid-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://github.com/MAnishSingh13275/MAnishSingh13275/blob/output/github-contribution-grid-snake.svg" />
-    <img alt="github contribution snake" src="https://github.com/MAnishSingh13275/MAnishSingh13275/blob/output/github-contribution-grid-snake.svg" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/singh-manish1/singh-manish1/blob/output/github-contribution-grid-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://github.com/singh-manish1/singh-manish1/blob/output/github-contribution-grid-snake.svg" />
+    <img alt="github contribution snake" src="https://github.com/singh-manish1/singh-manish1/blob/output/github-contribution-grid-snake.svg" />
   </picture>
 </p>
 
