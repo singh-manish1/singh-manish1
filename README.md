@@ -1,7 +1,7 @@
 <!-- README.md for Manish Singh | Frontend Software Engineer -->
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&pause=1000&color=00ADB5&center=true&vCenter=true&width=700&lines=Hey+there,+I'm+Manish+Singh!;Frontend+Software+Engineer+%7C+React+%7C+Next.js+%7C+TypeScript;Building+scalable,+high-performance+web+applications;2025+B.Tech+Graduate+🚀" alt="Typing Intro" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&pause=1000&color=00ADB5&center=true&vCenter=true&width=900&lines=Hey+there,+I'm+Manish+Singh!;Frontend+Software+Engineer;React+%7C+Next.js+%7C+TypeScript;Building+scalable,+high-performance+web+apps;2025+B.Tech+Graduate+🚀" alt="Typing Intro" />
 </p>
 
 <p align="center">
@@ -31,7 +31,7 @@
       <ul>
         <li>🎓 <b>Frontend Software Engineer</b> & 2025 B.Tech Graduate from UIT RGPV, Bhopal.</li>
         <li>🚀 Passionate about building scalable, high-performance web applications with React, Next.js, and TypeScript.</li>
-        <li>📦 <b>Key Projects:</b> <a href="https://onezy.in" target="_blank"><b>Onezy Live</b></a> (portfolio/agency website), <a href="https://repset.in" target="_blank"><b>Repset</b></a> (gym management SaaS), <a href="https://rachnakaar.vercel.app" target="_blank"><b>Rachnakaar</b></a> (multilingual writing platform).</li>
+        <li>📦 <b> Key Projects:<a href="https://repset.in" target="_blank"> <b> Repset</b></a> (gym management SaaS), <a href="https://rachnakaar.vercel.app" target="_blank"><b>Rachnakaar</b></a> (multilingual writing platform).</li>
         <li>🌱 Expert in translating Figma designs into modular components while maintaining WCAG standards and optimizing Core Web Vitals.</li>
         <li>📍 Based in Bhopal, Madhya Pradesh</li>
       </ul>
@@ -113,54 +113,52 @@ Lighthouse Audits · Chrome DevTools · Cross-browser Testing · WCAG Compliance
 
 ### �  Onezy Live – Portfolio & Agency Website
 <a href="https://onezy.in" target="_blank">
-  <img src="./assets/Onezy.png" alt="Onezy Live Screenshot" width="70%" style="border-radius: 12px; box-shadow: 0 4px 18px rgba(0,0,0,0.08);" />
+  <img src="./assets/onezy.jpeg" alt="Onezy Live Screenshot" width="75%" style="border-radius: 16px; box-shadow: 0 8px 32px rgba(0,173,181,0.15); margin: 20px 0;" />
 </a>
 
-**Tech Stack:** Next.js 15 · React 19 · TypeScript · Tailwind CSS
+**Tech Stack:** `Next.js 15` • `React 19` • `TypeScript` • `Tailwind CSS`
 
 A Modern, Full-Stack Portfolio & Agency Website built with cutting-edge web technologies. Features stunning UI, robust admin panel, and seamless user experience for showcasing services and projects.
 
-[🔗 Live Demo](https://onezy.in/) <!-- | [📖 Case Study](https://manishsingh.me/projects/onezy) -->
+**🔗 [Live Demo](https://onezy.in/)** <!-- | [📖 Case Study](https://manishsingh.me/projects/onezy) -->
 
-<br>
+---
 
 ### 🏋️ Repset – Gym Management SaaS
 <a href="https://repset.in" target="_blank">
-  <img src="./assets/Repset.png" alt="Repset Screenshot" width="70%" style="border-radius: 12px; box-shadow: 0 4px 18px rgba(0,0,0,0.08);" />
+  <img src="./assets/Repset.png" alt="Repset Screenshot" width="75%" style="border-radius: 16px; box-shadow: 0 8px 32px rgba(0,173,181,0.15); margin: 20px 0;" />
 </a>
 
-**Tech Stack:** Next.js · Prisma · Clerk · TypeScript
+**Tech Stack:** `Next.js` • `Prisma` • `Clerk` • `TypeScript` • `PostgreSQL`
 
 A modern SaaS platform designed for gyms and fitness studios. Handles membership management, attendance, analytics, and online payments with multi-tenant architecture.
 
-[🔗 Live Demo](https://repset.in/) <!-- | [📖 Case Study](https://manishsingh.me/projects/repset) -->
+**🔗 [Live Demo](https://repset.in/)** <!-- | [📖 Case Study](https://manishsingh.me/projects/repset) -->
 
-<br>
+---
 
 ### ✍️ Rachnakaar – Multilingual Writing Platform
-**Tech Stack:** Next.js · TypeScript · Prisma · Clerk
+<a href="https://rachnakaar.vercel.app" target="_blank">
+  <img src="./assets/Rachnakaar.jpeg" alt="Rachnakaar Screenshot" width="75%" style="border-radius: 16px; box-shadow: 0 8px 32px rgba(0,173,181,0.15); margin: 20px 0;" />
+</a>
+
+**Tech Stack:** `Next.js` • `TypeScript` • `Prisma` • `Clerk`
 
 A modern platform for Indian writers to share stories, poems, and creativity in their native languages. Features rich text editing, writing competitions, and social features with full support for Indian language scripts.
 
-[🔗 Live Demo](https://rachnakaar.vercel.app/) | [💻 Code](https://github.com/MAnishSingh13275/rachnakaar.git) <!-- | [📖 Case Study](https://manishsingh.me/projects/rachnakaar) -->
+**🔗 [Live Demo](https://rachnakaar.vercel.app/)** • **💻 [Code](https://github.com/MAnishSingh13275/rachnakaar.git)** <!-- | [📖 Case Study](https://manishsingh.me/projects/rachnakaar) -->
 
-<br>
+---
 
 ### 🤖 Gurukool – AI-Powered Learning Platform
-**Tech Stack:** Next.js · Langchain · OpenAI · tRPC
+
+**Tech Stack:** `Next.js` • `Langchain` • `OpenAI` • `tRPC`
 
 AI-powered learning platform for students, offering curated study materials, previous year question papers, and contextual PDF-based answering with intelligent content generation.
 
-[🔗 Live Demo](https://gurukool.tech) | [💻 Code](https://github.com/MAnishSingh13275/Gurukool) <!-- | [📖 Case Study](https://manishsingh.me/projects/gurukool) -->
+**🔗 [Live Demo](https://gurukool.tech)** • **💻 [Code](https://github.com/MAnishSingh13275/Gurukool)** <!-- | [📖 Case Study](https://manishsingh.me/projects/gurukool) -->
 
-<br>
 
-### 💬 Talk – Real-Time Chat Application
-**Tech Stack:** React.js · Socket.io · MongoDB
-
-Real-time messaging web app with robust authentication, message history, and modern UI. Built for seamless chat experiences with instant message delivery and user presence indicators.
-
-[💻 Code](https://github.com/MAnishSingh13275/talk) <!-- | [📖 Case Study](https://manishsingh.me/projects/talk) -->
 
 
 
@@ -174,20 +172,6 @@ Real-time messaging web app with robust authentication, message history, and mod
     <img src="https://holopin.me/manish0204" alt="Holopin badges" width="410" />
   </a>
 </p>
-
----
-
-<h3 align="center">📌 Current Focus</h3>
-<ul>
-  <li>🎓 Recently graduated with B.Tech in Computer Science from UIT RGPV (2025)</li>
-  <li>🚀 Building scalable web applications with React, Next.js, and TypeScript</li>
-  <li>⚡ Optimizing Core Web Vitals and maintaining WCAG accessibility standards</li>
-  <li>💡 Translating complex Figma designs into modular, reusable component libraries</li>
-  <li>📚 Mentoring students in modern React and frontend best practices</li>
-  <li>🔍 Seeking opportunities as a Frontend Software Engineer</li>
-</ul>
-
----
 
 <p align="center">
   <a href="https://manishsingh.me" target="_blank"><b>🌐 Portfolio</b></a> •
