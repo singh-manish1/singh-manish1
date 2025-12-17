@@ -27,7 +27,7 @@
 <table width="100%">
   <tr>
     <td align="left" valign="middle">
-      <h2>👋 Hi, I’m <strong>Manish Singh</strong></h2>
+      <h2>👋 Hi, I'm <strong>Manish Singh</strong></h2>
       <ul>
         <li>🎓 <b>Frontend Software Engineer</b> & 2025 B.Tech Graduate from UIT RGPV, Bhopal.</li>
         <li>🚀 Passionate about building scalable, high-performance web applications with React, Next.js, and TypeScript.</li>
@@ -110,58 +110,102 @@ Lighthouse Audits · Chrome DevTools · Cross-browser Testing · WCAG Compliance
 <h3 align="center">🚩 Featured Projects</h3>
 
 <div align="center">
-
-### �  Onezy Live – Portfolio & Agency Website
-<a href="https://onezy.in" target="_blank">
-  <img src="./assets/onezy.jpeg" alt="Onezy Live Screenshot" width="75%" style="border-radius: 16px; box-shadow: 0 8px 32px rgba(0,173,181,0.15); margin: 20px 0;" />
-</a>
-
-**Tech Stack:** `Next.js 15` • `React 19` • `TypeScript` • `Tailwind CSS`
-
-A Modern, Full-Stack Portfolio & Agency Website built with cutting-edge web technologies. Features stunning UI, robust admin panel, and seamless user experience for showcasing services and projects.
-
-**🔗 [Live Demo](https://onezy.in/)** <!-- | [📖 Case Study](https://manishsingh.me/projects/onezy) -->
-
----
-
-### 🏋️ Repset – Gym Management SaaS
-<a href="https://repset.in" target="_blank">
-  <img src="./assets/Repset.png" alt="Repset Screenshot" width="75%" style="border-radius: 16px; box-shadow: 0 8px 32px rgba(0,173,181,0.15); margin: 20px 0;" />
-</a>
-
-**Tech Stack:** `Next.js` • `Prisma` • `Clerk` • `TypeScript` • `PostgreSQL`
-
-A modern SaaS platform designed for gyms and fitness studios. Handles membership management, attendance, analytics, and online payments with multi-tenant architecture.
-
-**🔗 [Live Demo](https://repset.in/)** <!-- | [📖 Case Study](https://manishsingh.me/projects/repset) -->
-
----
-
-### ✍️ Rachnakaar – Multilingual Writing Platform
-<a href="https://rachnakaar.vercel.app" target="_blank">
-  <img src="./assets/Rachnakaar.jpeg" alt="Rachnakaar Screenshot" width="75%" style="border-radius: 16px; box-shadow: 0 8px 32px rgba(0,173,181,0.15); margin: 20px 0;" />
-</a>
-
-**Tech Stack:** `Next.js` • `TypeScript` • `Prisma` • `Clerk`
-
-A modern platform for Indian writers to share stories, poems, and creativity in their native languages. Features rich text editing, writing competitions, and social features with full support for Indian language scripts.
-
-**🔗 [Live Demo](https://rachnakaar.vercel.app/)** • **💻 [Code](https://github.com/MAnishSingh13275/rachnakaar.git)** <!-- | [📖 Case Study](https://manishsingh.me/projects/rachnakaar) -->
-
----
-
-### 🤖 Gurukool – AI-Powered Learning Platform
-
-**Tech Stack:** `Next.js` • `Langchain` • `OpenAI` • `tRPC`
-
-AI-powered learning platform for students, offering curated study materials, previous year question papers, and contextual PDF-based answering with intelligent content generation.
-
-**🔗 [Live Demo](https://gurukool.tech)** • **💻 [Code](https://github.com/MAnishSingh13275/Gurukool)** <!-- | [📖 Case Study](https://manishsingh.me/projects/gurukool) -->
-
-
-
-
-
+  <table width="100%">
+    <tr>
+      <td width="50%" valign="top">
+        <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 20px; padding: 20px; margin: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); transition: transform 0.3s ease;">
+          <div style="text-align: center; margin-bottom: 15px;">
+            <h3 style="color: white; margin: 0 0 10px 0; font-size: 1.4em;">🌟 Onezy Live</h3>
+            <p style="color: #f0f0f0; margin: 0; font-size: 0.9em; font-weight: 500;">Portfolio & Agency Website</p>
+          </div>
+          <a href="https://onezy.in" target="_blank">
+            <img src="./assets/onezy.jpeg" alt="Onezy Live Screenshot" width="100%" style="border-radius: 12px; margin-bottom: 15px;" />
+          </a>
+          <div style="color: white; font-size: 0.85em; line-height: 1.5; margin-bottom: 15px;">
+            A Modern, Full-Stack Portfolio & Agency Website built with cutting-edge web technologies. Features stunning UI, robust admin panel, and seamless user experience.
+          </div>
+          <div style="margin-bottom: 15px;">
+            <span style="background: rgba(255,255,255,0.2); color: white; padding: 4px 8px; border-radius: 12px; font-size: 0.75em; margin: 2px;">Next.js 15</span>
+            <span style="background: rgba(255,255,255,0.2); color: white; padding: 4px 8px; border-radius: 12px; font-size: 0.75em; margin: 2px;">React 19</span>
+            <span style="background: rgba(255,255,255,0.2); color: white; padding: 4px 8px; border-radius: 12px; font-size: 0.75em; margin: 2px;">TypeScript</span>
+          </div>
+          <div style="text-align: center;">
+            <a href="https://onezy.in/" target="_blank" style="background: rgba(255,255,255,0.9); color: #667eea; padding: 8px 16px; border-radius: 20px; text-decoration: none; font-weight: bold; font-size: 0.85em;">🔗 Live Demo</a>
+          </div>
+        </div>
+      </td>
+      <td width="50%" valign="top">
+        <div style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); border-radius: 20px; padding: 20px; margin: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); transition: transform 0.3s ease;">
+          <div style="text-align: center; margin-bottom: 15px;">
+            <h3 style="color: white; margin: 0 0 10px 0; font-size: 1.4em;">🏋️ Repset</h3>
+            <p style="color: #f0f0f0; margin: 0; font-size: 0.9em; font-weight: 500;">Gym Management SaaS</p>
+          </div>
+          <a href="https://repset.in" target="_blank">
+            <img src="./assets/Repset.png" alt="Repset Screenshot" width="100%" style="border-radius: 12px; margin-bottom: 15px;" />
+          </a>
+          <div style="color: white; font-size: 0.85em; line-height: 1.5; margin-bottom: 15px;">
+            A modern SaaS platform designed for gyms and fitness studios. Handles membership management, attendance, analytics, and online payments with multi-tenant architecture.
+          </div>
+          <div style="margin-bottom: 15px;">
+            <span style="background: rgba(255,255,255,0.2); color: white; padding: 4px 8px; border-radius: 12px; font-size: 0.75em; margin: 2px;">Next.js</span>
+            <span style="background: rgba(255,255,255,0.2); color: white; padding: 4px 8px; border-radius: 12px; font-size: 0.75em; margin: 2px;">Prisma</span>
+            <span style="background: rgba(255,255,255,0.2); color: white; padding: 4px 8px; border-radius: 12px; font-size: 0.75em; margin: 2px;">PostgreSQL</span>
+          </div>
+          <div style="text-align: center;">
+            <a href="https://repset.in/" target="_blank" style="background: rgba(255,255,255,0.9); color: #f5576c; padding: 8px 16px; border-radius: 20px; text-decoration: none; font-weight: bold; font-size: 0.85em;">🔗 Live Demo</a>
+          </div>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td width="50%" valign="top">
+        <div style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); border-radius: 20px; padding: 20px; margin: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); transition: transform 0.3s ease;">
+          <div style="text-align: center; margin-bottom: 15px;">
+            <h3 style="color: white; margin: 0 0 10px 0; font-size: 1.4em;">✍️ Rachnakaar</h3>
+            <p style="color: #f0f0f0; margin: 0; font-size: 0.9em; font-weight: 500;">Multilingual Writing Platform</p>
+          </div>
+          <a href="https://rachnakaar.vercel.app" target="_blank">
+            <img src="./assets/Rachnakaar.jpeg" alt="Rachnakaar Screenshot" width="100%" style="border-radius: 12px; margin-bottom: 15px;" />
+          </a>
+          <div style="color: white; font-size: 0.85em; line-height: 1.5; margin-bottom: 15px;">
+            A modern platform for Indian writers to share stories, poems, and creativity in their native languages. Features rich text editing, writing competitions, and social features.
+          </div>
+          <div style="margin-bottom: 15px;">
+            <span style="background: rgba(255,255,255,0.2); color: white; padding: 4px 8px; border-radius: 12px; font-size: 0.75em; margin: 2px;">Next.js</span>
+            <span style="background: rgba(255,255,255,0.2); color: white; padding: 4px 8px; border-radius: 12px; font-size: 0.75em; margin: 2px;">TypeScript</span>
+            <span style="background: rgba(255,255,255,0.2); color: white; padding: 4px 8px; border-radius: 12px; font-size: 0.75em; margin: 2px;">Clerk</span>
+          </div>
+          <div style="text-align: center;">
+            <a href="https://rachnakaar.vercel.app/" target="_blank" style="background: rgba(255,255,255,0.9); color: #4facfe; padding: 8px 16px; border-radius: 20px; text-decoration: none; font-weight: bold; font-size: 0.85em; margin-right: 8px;">🔗 Live Demo</a>
+            <a href="https://github.com/MAnishSingh13275/rachnakaar.git" target="_blank" style="background: rgba(255,255,255,0.9); color: #4facfe; padding: 8px 16px; border-radius: 20px; text-decoration: none; font-weight: bold; font-size: 0.85em;">💻 Code</a>
+          </div>
+        </div>
+      </td>
+      <td width="50%" valign="top">
+        <div style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); border-radius: 20px; padding: 20px; margin: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); transition: transform 0.3s ease;">
+          <div style="text-align: center; margin-bottom: 15px;">
+            <h3 style="color: white; margin: 0 0 10px 0; font-size: 1.4em;">🤖 Gurukool</h3>
+            <p style="color: #f0f0f0; margin: 0; font-size: 0.9em; font-weight: 500;">AI-Powered Learning Platform</p>
+          </div>
+          <a href="https://gurukool.tech" target="_blank">
+            <img src="./assets/gurukool.png" alt="Gurukool Screenshot" width="100%" style="border-radius: 12px; margin-bottom: 15px;" />
+          </a>
+          <div style="color: white; font-size: 0.85em; line-height: 1.5; margin-bottom: 15px;">
+            AI-powered learning platform for students, offering curated study materials, previous year question papers, and contextual PDF-based answering with intelligent content generation.
+          </div>
+          <div style="margin-bottom: 15px;">
+            <span style="background: rgba(255,255,255,0.2); color: white; padding: 4px 8px; border-radius: 12px; font-size: 0.75em; margin: 2px;">Next.js</span>
+            <span style="background: rgba(255,255,255,0.2); color: white; padding: 4px 8px; border-radius: 12px; font-size: 0.75em; margin: 2px;">Langchain</span>
+            <span style="background: rgba(255,255,255,0.2); color: white; padding: 4px 8px; border-radius: 12px; font-size: 0.75em; margin: 2px;">OpenAI</span>
+          </div>
+          <div style="text-align: center;">
+            <a href="https://gurukool.tech" target="_blank" style="background: rgba(255,255,255,0.9); color: #fa709a; padding: 8px 16px; border-radius: 20px; text-decoration: none; font-weight: bold; font-size: 0.85em; margin-right: 8px;">🔗 Live Demo</a>
+            <a href="https://github.com/MAnishSingh13275/Gurukool" target="_blank" style="background: rgba(255,255,255,0.9); color: #fa709a; padding: 8px 16px; border-radius: 20px; text-decoration: none; font-weight: bold; font-size: 0.85em;">💻 Code</a>
+          </div>
+        </div>
+      </td>
+    </tr>
+  </table>
 </div>
 
 ---
