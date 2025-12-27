@@ -36,9 +36,6 @@
         <li>📍 Based in Bhopal, Madhya Pradesh</li>
       </ul>
     </td>
-    <td align="center" width="185">
-      <img src="https://avatars.githubusercontent.com/singh-manish1?size=180" width="160" alt="Manish Singh avatar" style="border-radius:50%;box-shadow:0 0 16px #00ADB5;"/>
-    </td>
   </tr>
 </table>
 
