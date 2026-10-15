@@ -13,7 +13,7 @@
 
 I'm a full stack engineer and a 2025 Computer Science graduate. I like the whole trip a request takes: the button someone taps, the server code that checks it, and the database row that has to stay correct when two people tap at the same moment.
 
-Right now I build mobile apps in React Native at **Appbrew**, and on the side I'm building **Geeli Maati**, a booking and shop platform for a pottery studio.
+Right now I build mobile apps in React Native at **Appbrew**.
 
 ## Drill cores
 
