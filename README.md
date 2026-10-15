@@ -68,12 +68,12 @@ Also: ran React workshops for 35+ students at CodeCult, and 20+ sessions for 100
 
 ## Projects
 
-Open one to watch a single request travel through it, from the browser to the database.
+Open one to see what happens, step by step, when someone uses it.
 
 <details>
 <summary><img src="./assets/card-repset.svg" width="96%" alt="Repset: Multi-tenant gym management SaaS. Click to open."/></summary>
 
-<img src="./assets/trace-repset.svg" width="100%" alt="Repset: trace of PATCH  mark member attendance: optimistic update (React Query), API route handler, Clerk session + role check (RBAC), tenant scope: where gym_id = …, UPDATE attendance, 200 OK, invalidate + refetch analytics."/>
+<img src="./assets/flow-repset.svg" width="100%" alt="What happens when staff mark a member present: 1. Staff tap Present (The list updates instantly) 2. Server checks who is asking (Clerk session and role) 3. Only this gym's data is touched (Every query scoped by gym) 4. Saved in PostgreSQL (Analytics refresh after)"/>
 
 Each gym's data stays its own. Role-based access through Clerk, Razorpay billing, and React Query with optimistic updates for 30% faster interactions. [Open Repset](https://repset.in)
 
@@ -82,7 +82,7 @@ Each gym's data stays its own. Role-based access through Clerk, Razorpay billing
 <details>
 <summary><img src="./assets/card-rachnakaar.svg" width="96%" alt="Rachnakaar: A platform for Indian writers, in their own scripts. Click to open."/></summary>
 
-<img src="./assets/trace-rachnakaar.svg" width="100%" alt="Rachnakaar: trace of POST  publish a story: rich text editor serialises, API route handler, Clerk auth, validate title + body, prisma.story.create(), enter competition entry, render story page."/>
+<img src="./assets/flow-rachnakaar.svg" width="100%" alt="What happens when a writer publishes a story: 1. Writer hits Publish (Rich text in any Indian script) 2. Signed-in check (Clerk auth) 3. Title and body validated (Nothing malformed is saved) 4. Story saved with Prisma (Linked to writer and contest)"/>
 
 Writers publish stories and poems in Indian languages, with a rich text editor and writing competitions. Indic text stays intact from the editor to the database. [Open Rachnakaar](https://rachnakaar.vercel.app/)
 
@@ -91,7 +91,7 @@ Writers publish stories and poems in Indian languages, with a rich text editor a
 <details>
 <summary><img src="./assets/card-gurukool.svg" width="96%" alt="Gurukool: AI learning platform that answers from your own PDFs. Click to open."/></summary>
 
-<img src="./assets/trace-gurukool.svg" width="100%" alt="Gurukool: trace of POST  ask about this PDF: question from the reader, API route handler, load the PDF's text, find the relevant passages (LangChain), OpenAI completion with context, stream answer to the page."/>
+<img src="./assets/flow-gurukool.svg" width="100%" alt="What happens when a student asks about a PDF: 1. Student asks a question (About the PDF they're reading) 2. Relevant passages found (LangChain retrieval) 3. OpenAI writes the answer (Grounded in those passages) 4. Answer streams onto the page (Word by word)"/>
 
 Study material, previous year papers, and answers grounded in the PDF you're reading, built with LangChain and OpenAI. [Open Gurukool](https://gurukool.tech)
 
@@ -100,7 +100,7 @@ Study material, previous year papers, and answers grounded in the PDF you're rea
 <details>
 <summary><img src="./assets/card-geeli-maati.svg" width="96%" alt="Geeli Maati: Workshop booking and shop for a pottery studio. Click to open."/></summary>
 
-<img src="./assets/trace-geeli-maati.svg" width="100%" alt="Geeli Maati: trace of POST  book a workshop seat: Book button (Server Action form), bookSeat()  service layer, BEGIN, SELECT session … FOR UPDATE, check capacity and holds, INSERT booking  (30 min hold), INSERT email_outbox  (same tx), COMMIT, revalidate, render page, after(): send email via Resend."/>
+<img src="./assets/flow-geeli-maati.svg" width="100%" alt="What happens when someone books a workshop seat: 1. Customer taps Book (A Server Action, no fetch code) 2. Session row locked (SELECT … FOR UPDATE) 3. Seat held for 30 minutes (Capacity checked inside the lock) 4. Booking and email saved together (Email goes out after commit)"/>
 
 Booking, a shop that ships across India and an admin dashboard. Transactions and row locks stop double bookings, payments run over UPI with verification, and 247 Vitest tests cover it, including race conditions.
 

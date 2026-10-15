@@ -25,39 +25,29 @@ ${style ? `<style>${style}${REDUCED}</style>` : ""}
 ${body}
 </g></svg>`;
 
-// ---------- request traces (projects) ----------
-function trace({ name, kind, link, req, spans, note }) {
-  const W = 1200, rowH = 34, top = 112, labelW = 380, x0 = 440, x1 = 1150;
-  const H = top + spans.length * rowH + 64;
-  const end = Math.max(...spans.map((s) => s[1] + s[2]));
-  const X = (t) => x0 + (t / end) * (x1 - x0);
-  const kinds = { client: C.lichen, server: C.clay, db: C.shale, async: C.sand };
-  let body = `<text x="40" y="54" font-family="${SERIF}" font-size="30" font-style="italic" fill="${C.ink}">${esc(name)}</text>`;
-  body += `<text x="40" y="84" font-family="${SANS}" font-size="15" fill="${C.inkSoft}">${esc(kind)}${link ? `, ${esc(link)}` : ""}</text>`;
-  body += `<text x="${x1}" y="54" text-anchor="end" font-family="${MONO}" font-size="15" fill="${C.ink}">${esc(req)}</text>`;
-  for (let t = 0; t <= 4; t++) body += `<line x1="${x0 + (t * (x1 - x0)) / 4}" y1="${top - 6}" x2="${x0 + (t * (x1 - x0)) / 4}" y2="${top + spans.length * rowH}" stroke="${C.line}"/>`;
-  spans.forEach(([label, start, dur, k, depth = 0], i) => {
-    const y = top + i * rowH;
-    if (i % 2 === 0) body += `<rect x="24" y="${y}" width="${W - 48}" height="${rowH}" fill="rgba(28,36,51,.03)"/>`;
-    body += `<text x="${40 + depth * 18}" y="${y + 22}" font-family="${MONO}" font-size="13.5" fill="${C.ink}">${esc(label)}</text>`;
-    const cls = `s${i}`;
-    body += `<rect class="${cls}" x="${X(start)}" y="${y + 8}" width="${Math.max(X(start + dur) - X(start), 6)}" height="${rowH - 16}" rx="4" fill="${kinds[k]}"/>`;
-  });
-  // legend
-  const legend = [["client", "browser"], ["server", "server"], ["db", "database"], ["async", "after commit"]];
-  legend.forEach(([k, l], i) => {
-    const x = 40 + i * 150, y = H - 26;
-    body += `<rect x="${x}" y="${y - 11}" width="14" height="14" rx="3" fill="${kinds[k]}"/><text x="${x + 22}" y="${y + 1}" font-family="${SANS}" font-size="13" fill="${C.inkSoft}">${l}</text>`;
-  });
-  body += `<text x="${x1}" y="${H - 25}" text-anchor="end" font-family="${SANS}" font-size="13" fill="${C.inkSoft}">${esc(note)}</text>`;
-  // bars draw in, in order, once per loop
-  const P = 7;
+// ---------- project flows: one real action, in four plain steps ----------
+// Every word stays visible; the animation only highlights the step in progress.
+const LAYER_TAG = { Client: C.lichen, API: C.clay, Data: C.slate };
+function flow({ name, title, steps }) {
+  const W = 1200, H = 270, x0 = 40, gap = 34, bw = (W - 2 * x0 - gap * 3) / 4, top = 82, bh = 150, P = 6;
+  let body = `<text x="${x0}" y="50" font-family="${SERIF}" font-size="26" font-style="italic" fill="${C.ink}">${esc(title)}</text>`;
   let style = "";
-  spans.forEach(([, start], i) => {
-    const a = ((start / end) * 55).toFixed(1), b = Math.min(+a + 8, 70).toFixed(1);
-    style += `.s${i}{transform-box:fill-box;transform-origin:left;animation:g${i} ${P}s ease-out infinite}@keyframes g${i}{0%,${a}%{transform:scaleX(0)}${b}%,92%{transform:scaleX(1)}100%{transform:scaleX(0)}}\n`;
+  steps.forEach(([layer, main, detail], i) => {
+    const x = x0 + i * (bw + gap);
+    const a = (i * 22).toFixed(1), b = (i * 22 + 3).toFixed(1), c = (i * 22 + 20).toFixed(1), d = (i * 22 + 23).toFixed(1);
+    style += `.b${i}{animation:b${i} ${P}s ease-in-out infinite}@keyframes b${i}{0%,${a}%{stroke:${C.line};stroke-width:1.5}${b}%,${c}%{stroke:${C.ink};stroke-width:3}${d}%,100%{stroke:${C.line};stroke-width:1.5}}\n`;
+    body += `<rect class="b${i}" x="${x}" y="${top}" width="${bw}" height="${bh}" rx="14" fill="#fff" stroke="${C.line}" stroke-width="1.5"/>`;
+    body += `<rect x="${x + 18}" y="${top + 18}" width="${layer.length * 8.5 + 22}" height="24" rx="12" fill="${LAYER_TAG[layer]}"/>`;
+    body += `<text x="${x + 29}" y="${top + 35}" font-family="${SANS}" font-size="13" font-weight="600" fill="${layer === "Data" ? "#fff" : C.ink}">${layer}</text>`;
+    body += `<text x="${x + bw - 20}" y="${top + 36}" text-anchor="end" font-family="${SANS}" font-size="15" fill="${C.inkSoft}">${i + 1}</text>`;
+    main.split("\n").forEach((ln, j) => {
+      body += `<text x="${x + 18}" y="${top + 76 + j * 24}" font-family="${SANS}" font-size="19" font-weight="600" fill="${C.ink}">${esc(ln)}</text>`;
+    });
+    body += `<text x="${x + 18}" y="${top + bh - 18}" font-family="${SANS}" font-size="14" fill="${C.inkSoft}">${esc(detail)}</text>`;
+    if (i < 3) body += `<path d="M${x + bw + 6},${top + bh / 2} L${x + bw + gap - 6},${top + bh / 2}" stroke="${C.ink}" stroke-width="2" marker-end="url(#ar)"/>`;
   });
-  return frame(W, H, body, { title: `${name}: request trace`, desc: `${name}, ${kind}. Trace of ${req}: ${spans.map((s) => s[0]).join(", ")}.`, style });
+  body = `<defs><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="${C.ink}"/></marker></defs>` + body;
+  return frame(W, H, body, { title: `${name}: ${title}`, desc: steps.map(([l, m, d], i) => `Step ${i + 1} (${l}): ${m.replace("\n", " ")}, ${d}.`).join(" "), style });
 }
 
 // ---------- experience as git log --graph ----------
@@ -268,22 +258,18 @@ function card({ name, line, stack, meta }) {
 const projects = [
   { slug: "repset", name: "Repset", line: "Multi-tenant gym management SaaS", stack: "Next.js 14, PostgreSQL, Clerk, Razorpay", meta: "2025, live at repset.in", url: "https://repset.in",
     text: "Each gym's data stays its own. Role-based access through Clerk, Razorpay billing, and React Query with optimistic updates for 30% faster interactions.",
-    trace: { name: "Repset", kind: "Multi-tenant gym SaaS", link: "repset.in", req: "PATCH  mark member attendance", note: "Optimistic UI: the screen updates before the server answers.",
-      spans: [["optimistic update (React Query)", 0, 4, "client"], ["API route handler", 4, 52, "server"], ["Clerk session + role check (RBAC)", 6, 12, "server", 1], ["tenant scope: where gym_id = …", 18, 6, "server", 1], ["UPDATE attendance", 24, 20, "db", 1], ["200 OK", 56, 3, "server"], ["invalidate + refetch analytics", 59, 22, "client"]] } },
+    flow: {"title":"What happens when staff mark a member present","steps":[["Client","Staff tap Present","The list updates instantly"],["API","Server checks\nwho is asking","Clerk session and role"],["API","Only this gym's\ndata is touched","Every query scoped by gym"],["Data","Saved in\nPostgreSQL","Analytics refresh after"]]} },
   { slug: "rachnakaar", name: "Rachnakaar", line: "A platform for Indian writers, in their own scripts", stack: "Next.js, TypeScript, Prisma, Clerk", meta: "2025, live", url: "https://rachnakaar.vercel.app/",
     text: "Writers publish stories and poems in Indian languages, with a rich text editor and writing competitions. Indic text stays intact from the editor to the database.",
-    trace: { name: "Rachnakaar", kind: "Writing in Indian languages", link: "rachnakaar.vercel.app", req: "POST  publish a story", note: "Indic text stays UTF-8 from the editor to the database.",
-      spans: [["rich text editor serialises", 0, 8, "client"], ["API route handler", 8, 48, "server"], ["Clerk auth", 10, 9, "server", 1], ["validate title + body", 19, 6, "server", 1], ["prisma.story.create()", 25, 24, "db", 1], ["enter competition entry", 49, 5, "server", 1], ["render story page", 56, 18, "client"]] } },
+    flow: {"title":"What happens when a writer publishes a story","steps":[["Client","Writer hits\nPublish","Rich text in any Indian script"],["API","Signed-in check","Clerk auth"],["API","Title and body\nvalidated","Nothing malformed is saved"],["Data","Story saved\nwith Prisma","Linked to writer and contest"]]} },
   { slug: "gurukool", name: "Gurukool", line: "AI learning platform that answers from your own PDFs", stack: "Next.js, LangChain, OpenAI", meta: "live at gurukool.tech", url: "https://gurukool.tech",
     text: "Study material, previous year papers, and answers grounded in the PDF you're reading, built with LangChain and OpenAI.",
-    trace: { name: "Gurukool", kind: "AI learning platform", link: "gurukool.tech", req: "POST  ask about this PDF", note: "The answer streams in while it's being written.",
-      spans: [["question from the reader", 0, 5, "client"], ["API route handler", 5, 70, "server"], ["load the PDF's text", 8, 10, "server", 1], ["find the relevant passages (LangChain)", 18, 14, "server", 1], ["OpenAI completion with context", 32, 40, "async", 1], ["stream answer to the page", 36, 44, "client"]] } },
+    flow: {"title":"What happens when a student asks about a PDF","steps":[["Client","Student asks\na question","About the PDF they're reading"],["API","Relevant passages\nfound","LangChain retrieval"],["API","OpenAI writes\nthe answer","Grounded in those passages"],["Client","Answer streams\nonto the page","Word by word"]]} },
   { slug: "geeli-maati", name: "Geeli Maati", line: "Workshop booking and shop for a pottery studio", stack: "Next.js 16, PostgreSQL, Drizzle", meta: "2026, in progress, private repo", url: null,
     text: "Booking, a shop that ships across India and an admin dashboard. Transactions and row locks stop double bookings, payments run over UPI with verification, and 247 Vitest tests cover it, including race conditions.",
-    trace: { name: "Geeli Maati", kind: "Pottery studio booking and shop", req: "POST  book a workshop seat", note: "The shape of the request, not a benchmark.",
-      spans: [["Book button (Server Action form)", 0, 6, "client"], ["bookSeat()  service layer", 6, 70, "server"], ["BEGIN", 10, 3, "db", 1], ["SELECT session … FOR UPDATE", 13, 14, "db", 1], ["check capacity and holds", 27, 8, "server", 1], ["INSERT booking  (30 min hold)", 35, 12, "db", 1], ["INSERT email_outbox  (same tx)", 47, 9, "db", 1], ["COMMIT", 56, 6, "db", 1], ["revalidate, render page", 76, 14, "client"], ["after(): send email via Resend", 80, 30, "async"]] } },
+    flow: {"title":"What happens when someone books a workshop seat","steps":[["Client","Customer taps\nBook","A Server Action, no fetch code"],["Data","Session row\nlocked","SELECT … FOR UPDATE"],["API","Seat held for\n30 minutes","Capacity checked inside the lock"],["Data","Booking and email\nsaved together","Email goes out after commit"]]} },
   { slug: "onezy", name: "Onezy", line: "Agency website with an admin panel", stack: "Next.js 15, React 19, TypeScript", meta: "live at onezy.in", url: "https://onezy.in",
-    text: "A portfolio and agency site with an admin panel for managing its content.", trace: null },
+    text: "A portfolio and agency site with an admin panel for managing its content.", flow: null },
 ];
 
 // ---------- README ----------
@@ -319,8 +305,8 @@ ${layerBody[l.name]}
 </details>`).join("\n\n");
   const projectHtml = projects.map((p) => `<details>
 <summary><img src="./assets/card-${p.slug}.svg" width="96%" alt="${esc(p.name)}: ${esc(p.line)}. Click to open."/></summary>
-${p.trace ? `
-<img src="./assets/trace-${p.slug}.svg" width="100%" alt="${esc(p.name)}: trace of ${esc(p.trace.req)}: ${esc(p.trace.spans.map((s) => s[0]).join(", "))}."/>
+${p.flow ? `
+<img src="./assets/flow-${p.slug}.svg" width="100%" alt="${esc(p.flow.title)}: ${esc(p.flow.steps.map((st, i) => `${i + 1}. ${st[1].replace("\n", " ")} (${st[2]})`).join(" "))}"/>
 ` : ""}
 ${p.text}${p.url ? ` [Open ${p.name}](${p.url})` : ""}
 
@@ -353,7 +339,7 @@ Also: ran React workshops for 35+ students at CodeCult, and 20+ sessions for 100
 
 ## Projects
 
-Open one to watch a single request travel through it, from the browser to the database.
+Open one to see what happens, step by step, when someone uses it.
 
 ${projectHtml}
 
@@ -376,7 +362,7 @@ writeFileSync(path("assets/hero.svg"), hero());
 for (const l of layers) writeFileSync(path(`assets/${l.file}`), banner(l));
 for (const p of projects) {
   writeFileSync(path(`assets/card-${p.slug}.svg`), card(p));
-  if (p.trace) writeFileSync(path(`assets/trace-${p.slug}.svg`), trace(p.trace));
+  if (p.flow) writeFileSync(path(`assets/flow-${p.slug}.svg`), flow({ name: p.name, ...p.flow }));
 }
 writeFileSync(path("assets/gitlog.svg"), gitlog());
 writeFileSync(path("README.md"), readme());
