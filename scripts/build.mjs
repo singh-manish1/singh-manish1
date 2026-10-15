@@ -256,18 +256,18 @@ function card({ name, line, stack, meta }) {
 }
 
 const projects = [
-  { slug: "repset", name: "Repset", line: "Multi-tenant gym management SaaS", stack: "Next.js 14, PostgreSQL, Clerk, Razorpay", meta: "2025, live at repset.in", url: "https://repset.in",
-    text: "Each gym's data stays its own. Role-based access through Clerk, Razorpay billing, and React Query with optimistic updates for 30% faster interactions.",
-    flow: {"title":"What happens when staff mark a member present","steps":[["Client","Staff tap Present","The list updates instantly"],["API","Server checks\nwho is asking","Clerk session and role"],["API","Only this gym's\ndata is touched","Every query scoped by gym"],["Data","Saved in\nPostgreSQL","Analytics refresh after"]]} },
-  { slug: "rachnakaar", name: "Rachnakaar", line: "A platform for Indian writers, in their own scripts", stack: "Next.js, TypeScript, Prisma, Clerk", meta: "2025, live", url: "https://rachnakaar.vercel.app/",
-    text: "Writers publish stories and poems in Indian languages, with a rich text editor and writing competitions. Indic text stays intact from the editor to the database.",
-    flow: {"title":"What happens when a writer publishes a story","steps":[["Client","Writer hits\nPublish","Rich text in any Indian script"],["API","Signed-in check","Clerk auth"],["API","Title and body\nvalidated","Nothing malformed is saved"],["Data","Story saved\nwith Prisma","Linked to writer and contest"]]} },
-  { slug: "gurukool", name: "Gurukool", line: "AI learning platform that answers from your own PDFs", stack: "Next.js, LangChain, OpenAI", meta: "live at gurukool.tech", url: "https://gurukool.tech",
-    text: "Study material, previous year papers, and answers grounded in the PDF you're reading, built with LangChain and OpenAI.",
-    flow: {"title":"What happens when a student asks about a PDF","steps":[["Client","Student asks\na question","About the PDF they're reading"],["API","Relevant passages\nfound","LangChain retrieval"],["API","OpenAI writes\nthe answer","Grounded in those passages"],["Client","Answer streams\nonto the page","Word by word"]]} },
   { slug: "geeli-maati", name: "Geeli Maati", line: "Workshop booking and shop for a pottery studio", stack: "Next.js 16, PostgreSQL, Drizzle", meta: "2026, in progress, private repo", url: null,
     text: "Booking, a shop that ships across India and an admin dashboard. Transactions and row locks stop double bookings, payments run over UPI with verification, and 247 Vitest tests cover it, including race conditions.",
     flow: {"title":"What happens when someone books a workshop seat","steps":[["Client","Customer taps\nBook","A Server Action, no fetch code"],["Data","Session row\nlocked","SELECT … FOR UPDATE"],["API","Seat held for\n30 minutes","Capacity checked inside the lock"],["Data","Booking and email\nsaved together","Email goes out after commit"]]} },
+  { slug: "rachnakaar", name: "Rachnakaar", line: "A platform for Indian writers, in their own scripts", stack: "Next.js, TypeScript, Prisma, Clerk", meta: "2025, live", url: "https://rachnakaar.vercel.app/",
+    text: "Writers publish stories and poems in Indian languages, with a rich text editor and writing competitions. Indic text stays intact from the editor to the database.",
+    flow: {"title":"What happens when a writer publishes a story","steps":[["Client","Writer hits\nPublish","Rich text in any Indian script"],["API","Signed-in check","Clerk auth"],["API","Title and body\nvalidated","Nothing malformed is saved"],["Data","Story saved\nwith Prisma","Linked to writer and contest"]]} },
+  { slug: "repset", name: "Repset", line: "Multi-tenant gym management SaaS", stack: "Next.js 14, PostgreSQL, Clerk, Razorpay", meta: "2025, live at repset.in", url: "https://repset.in",
+    text: "Each gym's data stays its own. Role-based access through Clerk, Razorpay billing, and React Query with optimistic updates for 30% faster interactions.",
+    flow: {"title":"What happens when staff mark a member present","steps":[["Client","Staff tap Present","The list updates instantly"],["API","Server checks\nwho is asking","Clerk session and role"],["API","Only this gym's\ndata is touched","Every query scoped by gym"],["Data","Saved in\nPostgreSQL","Analytics refresh after"]]} },
+  { slug: "gurukool", name: "Gurukool", line: "AI learning platform that answers from your own PDFs", stack: "Next.js, LangChain, OpenAI", meta: "live at gurukool.tech", url: "https://gurukool.tech",
+    text: "Study material, previous year papers, and answers grounded in the PDF you're reading, built with LangChain and OpenAI.",
+    flow: {"title":"What happens when a student asks about a PDF","steps":[["Client","Student asks\na question","About the PDF they're reading"],["API","Relevant passages\nfound","LangChain retrieval"],["API","OpenAI writes\nthe answer","Grounded in those passages"],["Client","Answer streams\nonto the page","Word by word"]]} },
   { slug: "onezy", name: "Onezy", line: "Agency website with an admin panel", stack: "Next.js 15, React 19, TypeScript", meta: "live at onezy.in", url: "https://onezy.in",
     text: "A portfolio and agency site with an admin panel for managing its content.", flow: null },
 ];
