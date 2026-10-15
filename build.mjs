@@ -171,40 +171,48 @@ const cores = [
     ] }),
 ];
 
-// ---------- SEDIMENT TIMELINE (career) ----------
+// ---------- ROCK COLUMN (career) ----------
+// A stratigraphic column: one layer per role or project, newest on top, oldest at the bottom.
 function timeline() {
-  const W = 1200, H = 380, x0 = 60, x1 = 1140, ground = 300;
-  const t0 = 2021.4, t1 = 2027.0;
-  const X = (t) => x0 + ((t - t0) / (t1 - t0)) * (x1 - x0);
+  const kinds = {
+    Work: { fill: C.lichen, text: C.ink },
+    Project: { fill: C.ochre, text: C.ink },
+    Education: { fill: C.bedrock, text: "#fff" },
+  };
   const rows = [
-    { a: 2021.45, b: 2025.45, label: 'B.Tech CSE, UIT RGPV', fill: C.bedrock, dark: true, r: 0, inside: true },
-    { a: 2022.75, b: 2024.05, label: 'Braktt, frontend then SDE intern', fill: C.shale, dark: true, r: 1, split: 2023.33 },
-    { a: 2025.67, b: 2025.92, label: 'Repset', fill: C.ochre, r: 1 },
-    { a: 2026.08, b: 2026.95, label: 'Associate SWE, Appbrew', fill: C.lichen, r: 1 },
-    { a: 2025.84, b: 2026.0, label: 'Rachnakaar', fill: C.ochre, r: 2 },
-    { a: 2026.77, b: 2026.95, label: 'Geeli Maati', fill: C.ochre, r: 2 },
+    { when: "Oct 2026 – now", label: "Geeli Maati", kind: "Project" },
+    { when: "Feb 2026 – now", label: "Associate Software Engineer, Appbrew", kind: "Work" },
+    { when: "Nov – Dec 2025", label: "Rachnakaar", kind: "Project" },
+    { when: "Sep – Nov 2025", label: "Repset", kind: "Project" },
+    { when: "May 2023 – Jan 2024", label: "SDE Intern, Braktt Technologies", kind: "Work" },
+    { when: "Oct 2022 – Apr 2023", label: "Frontend Intern, Braktt Technologies", kind: "Work" },
+    { when: "Jun 2021 – Jun 2025", label: "B.Tech in Computer Science, UIT RGPV", kind: "Education" },
   ];
-  const rowY = (r) => ground - 42 - r * 76;
-  let body = '';
-  body += `<line x1="${x0}" y1="${ground}" x2="${x1}" y2="${ground}" stroke="${C.ink}" stroke-width="1.5"/>`;
-  for (let y = 2022; y <= 2026; y++) {
-    body += `<line x1="${X(y)}" y1="${ground}" x2="${X(y)}" y2="${ground + 8}" stroke="${C.ink}"/>`;
-    body += `<text x="${X(y)}" y="${ground + 28}" text-anchor="middle" font-family="${SANS}" font-size="14" fill="${C.inkSoft}">${y}</text>`;
-  }
-  rows.forEach((d, i) => {
-    const y = rowY(d.r), xa = X(d.a), xb = X(d.b), w = Math.max(xb - xa, 8);
-    body += `<rect x="${xa}" y="${y}" width="${w}" height="36" rx="6" fill="${d.fill}"/>`;
-    body += speckle(xa + 3, xa + w - 3, y + 4, y + 32, Math.round(w / 9), d.dark ? 'rgba(255,255,255,.14)' : 'rgba(28,36,51,.14)', i + 9);
-    if (d.split) body += `<line x1="${X(d.split)}" y1="${y}" x2="${X(d.split)}" y2="${y + 36}" stroke="${C.paper}" stroke-width="3"/>`;
-    if (d.inside) body += `<text x="${xa + 14}" y="${y + 23}" font-family="${SANS}" font-size="14" fill="#fff">${d.label}</text>`;
-    else body += `<text x="${xa}" y="${y - 9}" font-family="${SANS}" font-size="14" fill="${C.ink}">${d.label}</text>`;
+  const W = 1200, top = 112, rowH = 54, xa = 290, xb = 1140;
+  const H = top + rows.length * rowH + 64;
+  let body = `<g clip-path="url(#col)">`;
+  rows.forEach((r, i) => {
+    const k = kinds[r.kind];
+    const y = top + i * rowH;
+    body += band(xa, xb, y, y + rowH + 8, i + 5, k.fill);
+    if (i > 0) body += `<path d="${wave(xa, xb, y, 7, i + 5)}" fill="none" stroke="rgba(28,36,51,.28)" stroke-width="1.5"/>`;
+    body += speckle(xa, xb, y + 10, y + rowH - 4, 40, k.text === "#fff" ? "rgba(255,255,255,.12)" : "rgba(28,36,51,.10)", i + 11);
   });
-  body += `<text x="${x1}" y="${ground + 60}" text-anchor="end" font-family="${SANS}" font-size="13" fill="${C.inkSoft}">Older layers settle at the bottom.</text>`;
-  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" role="img" aria-label="Career timeline: B.Tech at UIT RGPV 2021 to 2025, Braktt frontend intern Oct 2022 to Apr 2023, Braktt SDE intern May 2023 to Jan 2024, Repset and Rachnakaar in late 2025, Associate Software Engineer at Appbrew from Feb 2026, Geeli Maati from Oct 2026.">
-<defs><clipPath id="r"><rect width="${W}" height="${H}" rx="22"/></clipPath></defs>
+  body += `</g>`;
+  rows.forEach((r, i) => {
+    const k = kinds[r.kind];
+    const cy = top + i * rowH + rowH / 2 + 6;
+    body += `<text x="60" y="${cy}" font-family="${SANS}" font-size="15" fill="${C.inkSoft}">${r.when}</text>`;
+    body += `<text x="${xa + 24}" y="${cy}" font-family="${SERIF}" font-size="20" font-style="italic" fill="${k.text}">${r.label}</text>`;
+    body += `<text x="${xb - 24}" y="${cy}" text-anchor="end" font-family="${SANS}" font-size="14" fill="${k.text}" opacity=".8">${r.kind}</text>`;
+  });
+  const bottom = top + rows.length * rowH;
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" role="img" aria-label="Career, newest first: Geeli Maati project from Oct 2026. Associate Software Engineer at Appbrew from Feb 2026. Rachnakaar project Nov to Dec 2025. Repset project Sep to Nov 2025. SDE Intern at Braktt Technologies May 2023 to Jan 2024. Frontend Intern at Braktt Technologies Oct 2022 to Apr 2023. B.Tech in Computer Science at UIT RGPV Jun 2021 to Jun 2025.">
+<defs><clipPath id="r"><rect width="${W}" height="${H}" rx="22"/></clipPath><clipPath id="col"><rect x="${xa}" y="${top - 12}" width="${xb - xa}" height="${bottom - top + 12}" rx="8"/></clipPath></defs>
 <g clip-path="url(#r)">
 <rect width="${W}" height="${H}" fill="${C.paper}"/>
-<text x="60" y="48" font-family="${SERIF}" font-size="28" font-style="italic" fill="${C.ink}">How the layers were laid down</text>
+<text x="60" y="56" font-family="${SERIF}" font-size="28" font-style="italic" fill="${C.ink}">How the layers were laid down</text>
+<text x="60" y="84" font-family="${SANS}" font-size="15" fill="${C.inkSoft}">Read it like rock: the newest layer is on top, the oldest at the bottom.</text>
 ${body}
 </g>
 </svg>`;

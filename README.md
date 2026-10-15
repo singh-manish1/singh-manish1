@@ -13,7 +13,7 @@
 
 I'm a full stack engineer and a 2025 Computer Science graduate. I like the whole trip a request takes: the button someone taps, the server code that checks it, and the database row that has to stay correct when two people tap at the same moment.
 
-Right now I build mobile apps in React Native at **Appbrew**.
+Right now I build mobile apps in React Native at **Appbrew**, and on the side I'm building **Geeli Maati**, a booking and shop platform for a pottery studio.
 
 ## Drill cores
 
@@ -45,7 +45,7 @@ Also built: [Onezy](https://onezy.in), an agency website, and [Gurukool](https:/
 ## Sediment
 
 <p align="center">
-  <img src="./assets/timeline.svg" width="100%" alt="Career timeline: B.Tech at UIT RGPV 2021 to 2025. Frontend intern then SDE intern at Braktt Technologies, Oct 2022 to Jan 2024. Repset and Rachnakaar in late 2025. Associate Software Engineer at Appbrew from Feb 2026. Geeli Maati from Oct 2026." />
+  <img src="./assets/timeline.svg" width="100%" alt="Career, newest first: Geeli Maati from Oct 2026. Associate Software Engineer at Appbrew from Feb 2026. Rachnakaar, Nov to Dec 2025. Repset, Sep to Nov 2025. SDE Intern at Braktt, May 2023 to Jan 2024. Frontend Intern at Braktt, Oct 2022 to Apr 2023. B.Tech at UIT RGPV, Jun 2021 to Jun 2025." />
 </p>
 
 - **Appbrew Technologies**, Associate Software Engineer, Feb 2026 to now. Cross-platform apps on React Native's new Fabric architecture.
