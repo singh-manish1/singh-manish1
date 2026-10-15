@@ -176,14 +176,10 @@ const cores = [
 function timeline() {
   const kinds = {
     Work: { fill: C.lichen, text: C.ink },
-    Project: { fill: C.ochre, text: C.ink },
     Education: { fill: C.bedrock, text: "#fff" },
   };
   const rows = [
-    { when: "Oct 2026 – now", label: "Geeli Maati", kind: "Project" },
     { when: "Feb 2026 – now", label: "Associate Software Engineer, Appbrew", kind: "Work" },
-    { when: "Nov – Dec 2025", label: "Rachnakaar", kind: "Project" },
-    { when: "Sep – Nov 2025", label: "Repset", kind: "Project" },
     { when: "May 2023 – Jan 2024", label: "SDE Intern, Braktt Technologies", kind: "Work" },
     { when: "Oct 2022 – Apr 2023", label: "Frontend Intern, Braktt Technologies", kind: "Work" },
     { when: "Jun 2021 – Jun 2025", label: "B.Tech in Computer Science, UIT RGPV", kind: "Education" },
@@ -207,7 +203,7 @@ function timeline() {
     body += `<text x="${xb - 24}" y="${cy}" text-anchor="end" font-family="${SANS}" font-size="14" fill="${k.text}" opacity=".8">${r.kind}</text>`;
   });
   const bottom = top + rows.length * rowH;
-  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" role="img" aria-label="Career, newest first: Geeli Maati project from Oct 2026. Associate Software Engineer at Appbrew from Feb 2026. Rachnakaar project Nov to Dec 2025. Repset project Sep to Nov 2025. SDE Intern at Braktt Technologies May 2023 to Jan 2024. Frontend Intern at Braktt Technologies Oct 2022 to Apr 2023. B.Tech in Computer Science at UIT RGPV Jun 2021 to Jun 2025.">
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" role="img" aria-label="Experience and education, newest first: Associate Software Engineer at Appbrew Technologies from Feb 2026. SDE Intern at Braktt Technologies May 2023 to Jan 2024. Frontend Intern at Braktt Technologies Oct 2022 to Apr 2023. B.Tech in Computer Science at UIT RGPV Jun 2021 to Jun 2025.">
 <defs><clipPath id="r"><rect width="${W}" height="${H}" rx="22"/></clipPath><clipPath id="col"><rect x="${xa}" y="${top - 12}" width="${xb - xa}" height="${bottom - top + 12}" rx="8"/></clipPath></defs>
 <g clip-path="url(#r)">
 <rect width="${W}" height="${H}" fill="${C.paper}"/>

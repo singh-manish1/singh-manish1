@@ -15,9 +15,20 @@ I'm a full stack engineer and a 2025 Computer Science graduate. I like the whole
 
 Right now I build mobile apps in React Native at **Appbrew**, and on the side I'm building **Geeli Maati**, a booking and shop platform for a pottery studio.
 
-## Drill cores
+## Experience
 
-Each project, sampled from the surface down to the database.
+<p align="center">
+  <img src="./assets/timeline.svg" width="100%" alt="Experience and education, newest first: Associate Software Engineer at Appbrew Technologies from Feb 2026. SDE Intern at Braktt Technologies, May 2023 to Jan 2024. Frontend Intern at Braktt Technologies, Oct 2022 to Apr 2023. B.Tech in Computer Science at UIT RGPV, Jun 2021 to Jun 2025." />
+</p>
+
+- **Appbrew Technologies**, Associate Software Engineer, Feb 2026 to now. Cross-platform apps on React Native's new Fabric architecture.
+- **Braktt Technologies**, frontend intern then SDE intern, Oct 2022 to Jan 2024. Dashboards on REST APIs, a 25% cut in Largest Contentful Paint, and JWT auth flows.
+
+**Teaching.** Ran React workshops for 35+ students at CodeCult, and 20+ sessions for 100+ people as Web Master of Asper Club.
+
+## Projects
+
+Each project as a drill core, sampled from the interface down to the database.
 
 <p align="center">
   <img src="./assets/core-geeli-maati.svg" width="32%" alt="Geeli Maati: pottery studio booking and shop. Next.js 16, Server Actions, UPI payments and refunds, PostgreSQL with Drizzle, row locks, 247 Vitest tests." />
@@ -33,7 +44,7 @@ Each project, sampled from the surface down to the database.
 
 Also built: [Onezy](https://onezy.in), an agency website, and [Gurukool](https://gurukool.tech), a learning platform that answers questions from your own PDFs.
 
-## Layers, in plain text
+## Skills
 
 | Layer | What I use |
 | --- | --- |
@@ -41,16 +52,6 @@ Also built: [Onezy](https://onezy.in), an agency website, and [Gurukool](https:/
 | Server | Node.js, Next.js Server Actions and Route Handlers, REST APIs, tRPC, Zod |
 | Data | PostgreSQL, Drizzle ORM, Prisma ORM, schema design, transactions and row locking |
 | Bedrock | Better Auth, Clerk, JWT, OAuth, role-based access, Razorpay, UPI, Cloudinary, Resend, Vitest |
-
-## Sediment
-
-<p align="center">
-  <img src="./assets/timeline.svg" width="100%" alt="Career, newest first: Geeli Maati from Oct 2026. Associate Software Engineer at Appbrew from Feb 2026. Rachnakaar, Nov to Dec 2025. Repset, Sep to Nov 2025. SDE Intern at Braktt, May 2023 to Jan 2024. Frontend Intern at Braktt, Oct 2022 to Apr 2023. B.Tech at UIT RGPV, Jun 2021 to Jun 2025." />
-</p>
-
-- **Appbrew Technologies**, Associate Software Engineer, Feb 2026 to now. Cross-platform apps on React Native's new Fabric architecture.
-- **Braktt Technologies**, SDE intern then frontend intern, Oct 2022 to Jan 2024. Dashboards on REST APIs, a 25% cut in Largest Contentful Paint, and JWT auth flows.
-- **Teaching**. Ran React workshops for 35+ students at CodeCult, and 20+ sessions for 100+ people as Web Master of Asper Club.
 
 ## The worm's tunnels
 
