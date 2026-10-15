@@ -1,23 +1,45 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 250" width="1200" height="250" role="img" aria-labelledby="t d">
-<title id="t">Manish Singh, full stack engineer</title><desc id="d">Header with a pot spinning on a wheel. This README is a working app: book a seat below.</desc>
-<style>.ring{stroke-dasharray:10 14;animation:spin 1.1s linear infinite}.r2{animation-duration:1.4s}@keyframes spin{to{stroke-dashoffset:-48}}@media (prefers-reduced-motion: reduce){*{animation:none!important}}</style>
-<defs><clipPath id="clip"><rect width="1200" height="250" rx="20"/></clipPath></defs>
-<g clip-path="url(#clip)"><rect width="1200" height="250" fill="#E3ECEF"/>
-
-<text x="56" y="104" font-family="Georgia, 'Times New Roman', serif" font-size="66" fill="#1C2433" letter-spacing="-1">Manish Singh</text>
-<text x="60" y="148" font-family="-apple-system, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="21" fill="#4A5568">Full stack engineer. React and Next.js up top, Node.js and PostgreSQL underneath.</text>
-<text x="60" y="196" font-family="-apple-system, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="16" fill="#1C2433">This README is a working app. Book a seat below and watch your request go through the stack.</text>
-<g transform="translate(960,36)">
-  <defs><clipPath id="pot"><path d="M50,150 C36,118 44,88 66,74 C74,68 72,52 66,44 L114,44 C108,52 106,68 114,74 C136,88 144,118 130,150 Z"/></clipPath></defs>
-  <rect x="78" y="164" width="24" height="26" fill="#5E6E7B"/>
-  <ellipse cx="90" cy="160" rx="88" ry="15" fill="#5E6E7B"/>
-  <ellipse cx="90" cy="155" rx="88" ry="15" fill="#7C8C99"/>
-  <path d="M50,150 C36,118 44,88 66,74 C74,68 72,52 66,44 L114,44 C108,52 106,68 114,74 C136,88 144,118 130,150 Z" fill="#E0AE4C"/>
-  <g clip-path="url(#pot)" stroke="#1C2433" stroke-opacity=".35" stroke-width="2.5" fill="none">
-    <path class="ring" d="M20,92 H160"/><path class="ring r2" d="M20,112 H160"/><path class="ring" d="M20,132 H160"/>
-  </g>
-  <path d="M50,150 C36,118 44,88 66,74 C74,68 72,52 66,44 L114,44 C108,52 106,68 114,74 C136,88 144,118 130,150 Z" fill="none" stroke="#1C2433" stroke-width="3"/>
-  <ellipse cx="90" cy="44" rx="24" ry="6" fill="#F3D08A" stroke="#1C2433" stroke-width="3"/>
-  <path class="ring" d="M8,158 Q90,180 172,158" fill="none" stroke="#fff" stroke-opacity=".5" stroke-width="2"/>
-</g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" width="1200" height="480" role="img" aria-labelledby="t d">
+<title id="t">Manish Singh, full stack engineer</title><desc id="d">An HTTP request for Manish Singh and its 200 OK JSON response: full stack engineer; client React, Next.js, React Native; server Node.js, REST, tRPC, Server Actions; data PostgreSQL, Prisma, Drizzle; now Software Engineer at Appbrew.</desc>
+<style>.v0{opacity:0;animation:v0 13s linear infinite}@keyframes v0{0%,2.31%{opacity:0}3.23%,96.15%{opacity:1}98.46%,100%{opacity:0}}
+.v1{opacity:0;animation:v1 13s linear infinite}@keyframes v1{0%,2.69%{opacity:0}3.62%,96.15%{opacity:1}98.46%,100%{opacity:0}}
+.v2{opacity:0;animation:v2 13s linear infinite}@keyframes v2{0%,3.08%{opacity:0}4%,96.15%{opacity:1}98.46%,100%{opacity:0}}
+.v3{opacity:0;animation:v3 13s linear infinite}@keyframes v3{0%,3.46%{opacity:0}4.38%,96.15%{opacity:1}98.46%,100%{opacity:0}}
+.v4{opacity:0;animation:v4 13s linear infinite}@keyframes v4{0%,3.85%{opacity:0}4.77%,96.15%{opacity:1}98.46%,100%{opacity:0}}
+.v5{opacity:0;animation:v5 13s linear infinite}@keyframes v5{0%,4.23%{opacity:0}5.15%,96.15%{opacity:1}98.46%,100%{opacity:0}}
+.v6{opacity:0;animation:v6 13s linear infinite}@keyframes v6{0%,4.62%{opacity:0}5.54%,96.15%{opacity:1}98.46%,100%{opacity:0}}
+.v7{opacity:0;animation:v7 13s linear infinite}@keyframes v7{0%,5%{opacity:0}5.92%,96.15%{opacity:1}98.46%,100%{opacity:0}}
+.v8{opacity:0;animation:v8 13s linear infinite}@keyframes v8{0%,5.38%{opacity:0}6.31%,96.15%{opacity:1}98.46%,100%{opacity:0}}
+.v9{opacity:0;animation:v9 13s linear infinite}@keyframes v9{0%,5.77%{opacity:0}6.69%,96.15%{opacity:1}98.46%,100%{opacity:0}}
+.v10{opacity:0;animation:v10 13s linear infinite}@keyframes v10{0%,6.15%{opacity:0}7.08%,96.15%{opacity:1}98.46%,100%{opacity:0}}
+.v11{opacity:0;animation:v11 13s linear infinite}@keyframes v11{0%,6.54%{opacity:0}7.46%,96.15%{opacity:1}98.46%,100%{opacity:0}}
+.v12{opacity:0;animation:v12 13s linear infinite}@keyframes v12{0%,6.92%{opacity:0}7.85%,96.15%{opacity:1}98.46%,100%{opacity:0}}
+.v13{opacity:0;animation:v13 13s linear infinite}@keyframes v13{0%,7.31%{opacity:0}8.23%,96.15%{opacity:1}98.46%,100%{opacity:0}}
+.v14{opacity:0;animation:v14 13s linear infinite}@keyframes v14{0%,7.69%{opacity:0}8.62%,96.15%{opacity:1}98.46%,100%{opacity:0}}
+.v15{opacity:0;animation:v15 13s linear infinite}@keyframes v15{0%,8.08%{opacity:0}9%,96.15%{opacity:1}98.46%,100%{opacity:0}}
+.v16{opacity:0;animation:v16 13s linear infinite}@keyframes v16{0%,8.46%{opacity:0}9.38%,96.15%{opacity:1}98.46%,100%{opacity:0}}
+.v17{opacity:0;animation:v17 13s linear infinite}@keyframes v17{0%,8.85%{opacity:0}9.77%,96.15%{opacity:1}98.46%,100%{opacity:0}}
+.v18{opacity:0;animation:v18 13s linear infinite}@keyframes v18{0%,9.23%{opacity:0}10.15%,96.15%{opacity:1}98.46%,100%{opacity:0}}
+.v19{opacity:0;animation:v19 13s linear infinite}@keyframes v19{0%,9.62%{opacity:0}10.54%,96.15%{opacity:1}98.46%,100%{opacity:0}}
+.v20{opacity:0;animation:v20 13s linear infinite}@keyframes v20{0%,10%{opacity:0}10.92%,96.15%{opacity:1}98.46%,100%{opacity:0}}
+.v21{opacity:0;animation:v21 13s linear infinite}@keyframes v21{0%,10.38%{opacity:0}11.31%,96.15%{opacity:1}98.46%,100%{opacity:0}}
+.v22{opacity:0;animation:v22 13s linear infinite}@keyframes v22{0%,10.77%{opacity:0}11.69%,96.15%{opacity:1}98.46%,100%{opacity:0}}
+.v23{opacity:0;animation:v23 13s linear infinite}@keyframes v23{0%,11.15%{opacity:0}12.08%,96.15%{opacity:1}98.46%,100%{opacity:0}}
+.v24{opacity:0;animation:v24 13s linear infinite}@keyframes v24{0%,11.54%{opacity:0}12.46%,96.15%{opacity:1}98.46%,100%{opacity:0}}
+.v25{opacity:0;animation:v25 13s linear infinite}@keyframes v25{0%,13.85%{opacity:0}14.77%,96.15%{opacity:1}98.46%,100%{opacity:0}}
+.v26{opacity:0;animation:v26 13s linear infinite}@keyframes v26{0%,15.38%{opacity:0}16.31%,96.15%{opacity:1}98.46%,100%{opacity:0}}
+.v27{opacity:0;animation:v27 13s linear infinite}@keyframes v27{0%,24.62%{opacity:0}25.54%,96.15%{opacity:1}98.46%,100%{opacity:0}}
+.v28{opacity:0;animation:v28 13s linear infinite}@keyframes v28{0%,27.69%{opacity:0}28.62%,96.15%{opacity:1}98.46%,100%{opacity:0}}
+.v29{opacity:0;animation:v29 13s linear infinite}@keyframes v29{0%,30%{opacity:0}30.92%,96.15%{opacity:1}98.46%,100%{opacity:0}}
+.v30{opacity:0;animation:v30 13s linear infinite}@keyframes v30{0%,32.31%{opacity:0}33.23%,96.15%{opacity:1}98.46%,100%{opacity:0}}
+.v31{opacity:0;animation:v31 13s linear infinite}@keyframes v31{0%,34.62%{opacity:0}35.54%,96.15%{opacity:1}98.46%,100%{opacity:0}}
+.v32{opacity:0;animation:v32 13s linear infinite}@keyframes v32{0%,36.92%{opacity:0}37.85%,96.15%{opacity:1}98.46%,100%{opacity:0}}
+.v33{opacity:0;animation:v33 13s linear infinite}@keyframes v33{0%,39.23%{opacity:0}40.15%,96.15%{opacity:1}98.46%,100%{opacity:0}}
+.v34{opacity:0;animation:v34 13s linear infinite}@keyframes v34{0%,41.54%{opacity:0}42.46%,96.15%{opacity:1}98.46%,100%{opacity:0}}
+.v35{opacity:0;animation:v35 13s linear infinite}@keyframes v35{0%,43.85%{opacity:0}44.77%,96.15%{opacity:1}98.46%,100%{opacity:0}}
+.v36{opacity:0;animation:v36 13s linear infinite}@keyframes v36{0%,46.15%{opacity:0}47.08%,96.15%{opacity:1}98.46%,100%{opacity:0}}
+.pk{opacity:0;animation:pk 13s linear infinite}@keyframes pk{0%,17.69%{opacity:0;transform:translateX(0)}18.19%{opacity:1}23.08%{opacity:1;transform:translateX(46px)}23.85%,100%{opacity:0;transform:translateX(46px)}}
+.cur{animation:blink 1s steps(2) infinite}@keyframes blink{50%{opacity:0}}@media (prefers-reduced-motion: reduce){*{animation:none!important}}</style>
+<defs><clipPath id="clip"><rect width="1200" height="480" rx="20"/></clipPath></defs>
+<g clip-path="url(#clip)"><rect width="1200" height="480" fill="#E3ECEF"/>
+<text x="56" y="92" font-family="Georgia, 'Times New Roman', serif" font-size="62" fill="#1C2433" letter-spacing="-1">Manish Singh</text><text x="60" y="132" font-family="-apple-system, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="20" fill="#4A5568">Full stack engineer. I build the screen, the API behind it and the database under that.</text><rect x="56" y="168" width="410" height="272" rx="14" fill="#F6F8F8" stroke="rgba(28,36,51,.14)"/><rect x="512" y="168" width="632" height="272" rx="14" fill="#F6F8F8" stroke="rgba(28,36,51,.14)"/><text x="76" y="196" font-family="-apple-system, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#4A5568">Request</text><text x="532" y="196" font-family="-apple-system, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#4A5568">Response</text><text x="76" y="232" font-family="ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace" font-size="16" fill="#1C2433"><tspan class="v0">G</tspan><tspan class="v1">E</tspan><tspan class="v2">T</tspan><tspan class="v3"> </tspan><tspan class="v4">/</tspan><tspan class="v5">s</tspan><tspan class="v6">i</tspan><tspan class="v7">n</tspan><tspan class="v8">g</tspan><tspan class="v9">h</tspan><tspan class="v10">-</tspan><tspan class="v11">m</tspan><tspan class="v12">a</tspan><tspan class="v13">n</tspan><tspan class="v14">i</tspan><tspan class="v15">s</tspan><tspan class="v16">h</tspan><tspan class="v17">1</tspan><tspan class="v18"> </tspan><tspan class="v19">H</tspan><tspan class="v20">T</tspan><tspan class="v21">T</tspan><tspan class="v22">P</tspan><tspan class="v23">/</tspan><tspan class="v24">2</tspan></text><text class="v25" x="76" y="260" font-family="ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace" font-size="16" fill="#4A5568">Host: github.com</text><text class="v26" x="76" y="288" font-family="ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace" font-size="16" fill="#4A5568">Accept: application/json</text><path d="M466,304 L512,304" stroke="#1C2433" stroke-opacity=".3" stroke-width="2" stroke-dasharray="3 5"/><circle class="pk" cx="466" cy="304" r="7" fill="#12B5CB" stroke="#fff" stroke-width="2"/><text class="v27" x="532" y="232" font-family="ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace" font-size="16" fill="#5E8C4A" font-weight="700">HTTP/2 200 OK</text><text class="v28" x="532" y="262" font-family="ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace" font-size="15" xml:space="preserve"><tspan fill="#5E6E7B">{</tspan><tspan fill="#1C2433"></tspan></text><text class="v29" x="532" y="284" font-family="ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace" font-size="15" xml:space="preserve"><tspan fill="#5E6E7B">  &quot;name&quot;: </tspan><tspan fill="#1C2433">&quot;Manish Singh&quot;,</tspan></text><text class="v30" x="532" y="306" font-family="ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace" font-size="15" xml:space="preserve"><tspan fill="#5E6E7B">  &quot;role&quot;: </tspan><tspan fill="#1C2433">&quot;Full stack engineer&quot;,</tspan></text><text class="v31" x="532" y="328" font-family="ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace" font-size="15" xml:space="preserve"><tspan fill="#5E6E7B">  &quot;client&quot;: </tspan><tspan fill="#1C2433">[&quot;React&quot;, &quot;Next.js&quot;, &quot;React Native&quot;],</tspan></text><text class="v32" x="532" y="350" font-family="ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace" font-size="15" xml:space="preserve"><tspan fill="#5E6E7B">  &quot;server&quot;: </tspan><tspan fill="#1C2433">[&quot;Node.js&quot;, &quot;REST&quot;, &quot;tRPC&quot;, &quot;Server Actions&quot;],</tspan></text><text class="v33" x="532" y="372" font-family="ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace" font-size="15" xml:space="preserve"><tspan fill="#5E6E7B">  &quot;data&quot;: </tspan><tspan fill="#1C2433">[&quot;PostgreSQL&quot;, &quot;Prisma&quot;, &quot;Drizzle&quot;],</tspan></text><text class="v34" x="532" y="394" font-family="ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace" font-size="15" xml:space="preserve"><tspan fill="#5E6E7B">  &quot;now&quot;: </tspan><tspan fill="#1C2433">&quot;Software Engineer @ Appbrew&quot;</tspan></text><text class="v35" x="532" y="416" font-family="ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace" font-size="15" xml:space="preserve"><tspan fill="#5E6E7B">}</tspan><tspan fill="#1C2433"></tspan></text><g class="v36"><rect class="cur" x="550" y="402" width="9" height="17" fill="#1C2433"/></g><text x="60" y="466" font-family="-apple-system, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="15" fill="#1C2433">Scroll down and open any layer of the stack. Everything opens right here on the page.</text>
 </g></svg>

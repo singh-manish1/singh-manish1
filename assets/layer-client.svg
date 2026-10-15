@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 150" width="1200" height="150" role="img" aria-labelledby="t d">
+<title id="t">Client layer</title><desc id="d">Client layer. A cursor presses Save in a small browser window, the change loads in place and shows Saved.</desc>
+<style>.cursor{animation:cur 5s ease-in-out infinite}@keyframes cur{0%{transform:translate(880px,138px)}30%,45%{transform:translate(1078px,108px)}100%{transform:translate(1078px,108px)}}
+.btn{transform-box:fill-box;transform-origin:center;animation:btn 5s linear infinite}@keyframes btn{0%,32%{transform:scale(1)}35%{transform:scale(.92)}39%,100%{transform:scale(1)}}
+.sk{transform-box:fill-box;transform-origin:left;animation:sk 5s ease-out infinite}@keyframes sk{0%,36%{transform:scaleX(0);opacity:.6}58%{transform:scaleX(1);opacity:.6}62%,100%{opacity:0;transform:scaleX(1)}}
+.ok{opacity:0;animation:okk 5s linear infinite}@keyframes okk{0%,62%{opacity:0}66%,94%{opacity:1}100%{opacity:0}}@media (prefers-reduced-motion: reduce){*{animation:none!important}}</style>
+<defs><clipPath id="clip"><rect width="1200" height="150" rx="16"/></clipPath></defs>
+<g clip-path="url(#clip)"><rect width="1200" height="150" fill="#A9B66E"/>
+<text x="48" y="66" font-family="Georgia, 'Times New Roman', serif" font-size="34" font-style="italic" fill="#1C2433">Client</text>
+<text x="50" y="98" font-family="-apple-system, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="16" fill="#1C2433" opacity=".9">What people see and touch: fast, accessible interfaces on web and mobile.</text>
+<text x="50" y="128" font-family="-apple-system, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#1C2433" opacity=".65">Click to open</text>
+<rect x="760" y="18" width="380" height="114" rx="10" fill="#F6F8F8" stroke="#1C2433" stroke-opacity=".25"/>
+<rect x="760" y="18" width="380" height="22" rx="10" fill="#E3ECEF"/><rect x="760" y="30" width="380" height="10" fill="#E3ECEF"/>
+<circle cx="774" cy="29" r="4" fill="#C2543A"/><circle cx="788" cy="29" r="4" fill="#E0AE4C"/><circle cx="802" cy="29" r="4" fill="#5E8C4A"/>
+<rect x="780" y="56" width="200" height="10" rx="5" fill="rgba(28,36,51,.14)"/>
+<rect x="780" y="74" width="150" height="10" rx="5" fill="rgba(28,36,51,.14)"/>
+<rect class="sk" x="780" y="98" width="220" height="14" rx="7" fill="#A9B66E"/>
+<g class="btn"><rect x="1030" y="90" width="88" height="30" rx="15" fill="#1C2433"/><text x="1074" y="110" text-anchor="middle" font-family="-apple-system, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#fff">Save</text></g>
+<text class="ok" x="780" y="110" font-family="-apple-system, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#5E8C4A" font-weight="600">Saved, 0 page reloads</text>
+<path class="cursor" d="M0,0 L0,16 L4,12 L7,19 L10,18 L7,11 L12,11 Z" fill="#1C2433" stroke="#fff" stroke-width="1"/>
+</g></svg>

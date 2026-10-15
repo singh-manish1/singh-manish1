@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" width="1200" height="120" role="img" aria-labelledby="t d">
+<title id="t">Onezy</title><desc id="d">Onezy: Agency website with an admin panel. Built with Next.js 15, React 19, TypeScript.</desc>
+
+<defs><clipPath id="clip"><rect width="1200" height="120" rx="14"/></clipPath></defs>
+<g clip-path="url(#clip)"><rect width="1200" height="120" fill="#F6F8F8"/>
+<rect x="0" y="0" width="10" height="120" fill="#E0AE4C"/>
+<text x="44" y="52" font-family="Georgia, 'Times New Roman', serif" font-size="30" font-style="italic" fill="#1C2433">Onezy</text>
+<text x="46" y="86" font-family="-apple-system, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="16" fill="#4A5568">Agency website with an admin panel</text>
+<text x="1150" y="52" text-anchor="end" font-family="ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace" font-size="14" fill="#1C2433">Next.js 15, React 19, TypeScript</text>
+<text x="1150" y="86" text-anchor="end" font-family="-apple-system, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#4A5568">live at onezy.in</text>
+</g></svg>
