@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 250" width="1200" height="250" role="img" aria-labelledby="t d">
+<title id="t">Manish Singh, full stack engineer</title><desc id="d">Header with a pot spinning on a wheel. This README is a working app: book a seat below.</desc>
+<style>.ring{stroke-dasharray:10 14;animation:spin 1.1s linear infinite}.r2{animation-duration:1.4s}@keyframes spin{to{stroke-dashoffset:-48}}@media (prefers-reduced-motion: reduce){*{animation:none!important}}</style>
+<defs><clipPath id="clip"><rect width="1200" height="250" rx="20"/></clipPath></defs>
+<g clip-path="url(#clip)"><rect width="1200" height="250" fill="#E3ECEF"/>
+
+<text x="56" y="104" font-family="Georgia, 'Times New Roman', serif" font-size="66" fill="#1C2433" letter-spacing="-1">Manish Singh</text>
+<text x="60" y="148" font-family="-apple-system, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="21" fill="#4A5568">Full stack engineer. React and Next.js up top, Node.js and PostgreSQL underneath.</text>
+<text x="60" y="196" font-family="-apple-system, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="16" fill="#1C2433">This README is a working app. Book a seat below and watch your request go through the stack.</text>
+<g transform="translate(960,36)">
+  <defs><clipPath id="pot"><path d="M50,150 C36,118 44,88 66,74 C74,68 72,52 66,44 L114,44 C108,52 106,68 114,74 C136,88 144,118 130,150 Z"/></clipPath></defs>
+  <rect x="78" y="164" width="24" height="26" fill="#5E6E7B"/>
+  <ellipse cx="90" cy="160" rx="88" ry="15" fill="#5E6E7B"/>
+  <ellipse cx="90" cy="155" rx="88" ry="15" fill="#7C8C99"/>
+  <path d="M50,150 C36,118 44,88 66,74 C74,68 72,52 66,44 L114,44 C108,52 106,68 114,74 C136,88 144,118 130,150 Z" fill="#E0AE4C"/>
+  <g clip-path="url(#pot)" stroke="#1C2433" stroke-opacity=".35" stroke-width="2.5" fill="none">
+    <path class="ring" d="M20,92 H160"/><path class="ring r2" d="M20,112 H160"/><path class="ring" d="M20,132 H160"/>
+  </g>
+  <path d="M50,150 C36,118 44,88 66,74 C74,68 72,52 66,44 L114,44 C108,52 106,68 114,74 C136,88 144,118 130,150 Z" fill="none" stroke="#1C2433" stroke-width="3"/>
+  <ellipse cx="90" cy="44" rx="24" ry="6" fill="#F3D08A" stroke="#1C2433" stroke-width="3"/>
+  <path class="ring" d="M8,158 Q90,180 172,158" fill="none" stroke="#fff" stroke-opacity=".5" stroke-width="2"/>
+</g>
+</g></svg>
